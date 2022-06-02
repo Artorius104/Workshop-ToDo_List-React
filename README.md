@@ -46,5 +46,21 @@ For useful graphical assets, we recommend you to install the React framework's M
 You'll find everything you need on the react official website https://reactjs.org/ and mui official website https://mui.com/ .
 
 # Tic Tac Toe Game
+    
+The first part of this workshop is about making a simple tic tac toe game. We'll focus on implementing only the necessary part of the game.
+
+    - Définition des différentes steps -
+    Présentation des props -> composants intéractifs -> immutabilité
+
+Our game is now finished, but maybe too simple. Feel free to add some functionnalities to add flavor to the game such as a movement history !
 
 # To Do List application
+
+The second and last part of the workshop will be making a to do list with react.
+To do list are widly use in job interviews and are a good exercise to show your skills about the demanded language.
+Just like the tic tac toe game, we'll focus on the basic parts for this workshop.
+
+    - Définition des différentes steps -
+    Focus sur les useStates
+    
+Our To do list is now complete. Just like tic tac toe, feel free to add functionnalities to sow off !
