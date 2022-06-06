@@ -52,14 +52,16 @@ Your application is going to be written in inside "App" inside index.js.
     
 # STEP 01
     
-Create a "Game" class which will contain our main implementation of the game, inside, use the "render" method to display your jsx.
+    - Create a "Game" class which will contain our main implementation of the game, inside, use the "render" method to display your jsx.
 
-Then, create a "Board" and "Square" functions which will return nothing for the moment.
+Then, 
+    - Create a "Board" and "Square" functions which will return nothing for the moment.
 "Square" will be called by "Board" which itself will be called by "Game".
     
 # STEP 02
 
-Using "Board" and "Square", display three rows of square.
+    - Using "Board" and "Square", display three rows of square.
+
 You can use this CSS code for the squares :
     
         .square {
@@ -77,7 +79,8 @@ You can use this CSS code for the squares :
             width: 34px;
         }
 
-Then, display the status of the game on top of the board with the following status : "Next player: X".
+Then, 
+    - Display the status of the game on top of the board with the following status : "Next player: X".
 You can create your own methods and use it to display one square at a time.
     
 # STEP 03
