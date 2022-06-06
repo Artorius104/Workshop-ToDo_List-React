@@ -31,7 +31,7 @@ Finally, check the installation with node -v
 
   - Then, create your React application with the following line :
   
-        npx create-react-app <my-app>
+    npx create-react-app <my-app>
 
 "my-app" being the name of your application.
 
@@ -40,8 +40,9 @@ Your application is set and ready to bu used !
 
 For useful graphical assets, we recommend you to install the React framework's Material-ui, which contain UI tools to help you ship new features faster :
   
-        npm install @mui/material @emotion/react @emotion/styled
-        npm install @mui/icons-material
+    npm install @mui/material @emotion/react @emotion/styled
+
+    npm install @mui/icons-material
   
 You'll find everything you need on the react official website https://reactjs.org/ and mui official website https://mui.com/ .
 
@@ -52,7 +53,7 @@ Your application is going to be written in inside "App" inside index.js.
     
 # STEP 01
     
-    - Create a "Game" class which will contain our main implementation of the game, inside, use the "render" method to display your jsx.
+    Create a "Game" class which will contain our main implementation of the game, inside, use the "render" method to display your jsx.
 
 Then : 
 
