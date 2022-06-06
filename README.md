@@ -12,20 +12,21 @@
     
     Arch Linux :
         
-         pacman -S nodejs npm
+     pacman -S nodejs npm
 
     Fedora :
         
-         sudo dnf module install nodejs:16
+     sudo dnf module install nodejs:16
     
     Ubuntu :
         
-         curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-         sudo apt-get install -y nodejs
+     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+     
+     sudo apt-get install -y nodejs
 
     For another operative system :
     
-        https://nodejs.dev/download/package-manager/
+    https://nodejs.dev/download/package-manager/
 
 Finally, check the installation with node -v
 
