@@ -33,7 +33,7 @@ Finally, check the installation with node -v
   
         npx create-react-app <my-app>
 
-<my-app> being the name of your application.
+"my-app" being the name of your application.
 
 Once it is done, go inside newly created directory and run the application with : npm start
 Your application is set and ready to bu used !
@@ -54,13 +54,14 @@ Your application is going to be written in inside "App" inside index.js.
     
     - Create a "Game" class which will contain our main implementation of the game, inside, use the "render" method to display your jsx.
 
-Then, 
-    - Create a "Board" and "Square" functions which will return nothing for the moment.
+Then : 
+
+    Create a "Board" and "Square" functions which will return nothing for the moment.
 "Square" will be called by "Board" which itself will be called by "Game".
     
 # STEP 02
 
-    - Using "Board" and "Square", display three rows of square.
+    Using "Board" and "Square", display three rows of square.
 
 You can use this CSS code for the squares :
     
@@ -79,8 +80,9 @@ You can use this CSS code for the squares :
             width: 34px;
         }
 
-Then, 
-    - Display the status of the game on top of the board with the following status : "Next player: X".
+Then : 
+
+    Display the status of the game on top of the board with the following status : "Next player: X".
 You can create your own methods and use it to display one square at a time.
     
 # STEP 03
@@ -91,41 +93,57 @@ To send values from a component to another means sending arguments from a parent
     
 # STEP 04
     
-Now we want to display an 'X' when we click on a square. To do this, think about onClick and useState or this.state.
+Now we want to :
+
+    Display an 'X' when we click on a square.
+    
+To do this, think about onClick and useState or this.state.
 
 States, are somethings that you are going to use all the time. It is going to be useful to maintain the value of each of the 9 squares in one location. They are declared as constant.
 
-Create a state in "Board" and send it's value to "Square".
+    Create a state in "Board" and send it's value to "Square".
     
 # STEP 05
     
-In Board, create a state which will contain an array. This array will represent all of our squares.
+In Board : 
+    
+    Create a state which will contain an array.
 
-Create a function handleClick(i) in "Board" which will modify the element i from the array.
+This array will represent all of our squares.
+
+    Create a function handleClick(i) in "Board" which will modify the element i from the array.
 
 This function will be called each time we click on a square. Is there a way for a child component to use a function of the parent ?
 
 Remember, a state is not a regular variable and is constant. Do you know how to modify a state ? Look for "Immutability" and guess why it is important.
     
-If "Square" is using states from itself, find a way to remove them so that the component uses only states' information from the parent. If you did so, good job, keeping the state of all squares in the Board component will allow it to determine the winner in the future.
+If "Square" is using states from itself, find a way to remove them so that the component uses only states' information from the parent.
 
-Since the Square components no longer maintain state, the Square components receive values from the Board component and inform the Board component when they’re clicked. In React terms, the Square components are now controlled components. The Board has full control over them.
+If you did so, good job, keeping the state of all squares in the Board component will allow it to determine the winner in the future.
+
+Since the Square components no longer maintain state, the Square components receive values from the Board component and inform the Board component when they’re clicked.
+
+In React terms, the Square components are now controlled components. The Board has full control over them.
     
 # STEP 06
    
 We're almost done ! Our Tic Tac Toe looks good but there's only one player...
 
-Create a new state to determine to either put an 'X' or an 'O' depending the player.
+    Create a new state to determine to either put an 'X' or an 'O' depending the player.
     
-Changes wil also be handled by handleClick function.
+Changes will also be handled by the handleClick function.
     
-Change the status displayed accordingly.
+    Change the status displayed accordingly.
     
 # STEP 07
     
-One more thing remaining, decides when a game is finished and who the winner is.
+One more thing remaining, we need to decide when a game is finished and who the winner is.
    
-Still inside the Board component, declare a "winner" variable which will contain the return value of the "calculateWinner" funcion. This create that function which will take our array representing the squares as argument will obviously return if a winner has been decided.
+Still inside the Board component : 
+
+    Declare a "winner" variable which will contain the return value of the "calculateWinner" funcion. 
+    
+That function which will take our array representing the squares as argument will obviously return if a winner has been decided.
     
     
 We're all set !
