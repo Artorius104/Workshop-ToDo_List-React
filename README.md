@@ -50,14 +50,14 @@ You'll find everything you need on the react official website https://reactjs.or
 The first part of this workshop is about making a simple tic tac toe game. We'll focus on implementing only the necessary part of the game.
 Your application is going to be written in inside "App" inside index.js.
     
-    - STEP 01
+# STEP 01
     
 Create a "Game" class which will contain our main implementation of the game, inside, use the "render" method to display your jsx.
 
 Then, create a "Board" and "Square" functions which will return nothing for the moment.
 "Square" will be called by "Board" which itself will be called by "Game".
     
-    - STEP 02
+# STEP 02
 
 Using "Board" and "Square", display three rows of square.
 You can use this CSS code for the squares :
@@ -80,13 +80,13 @@ You can use this CSS code for the squares :
 Then, display the status of the game on top of the board with the following status : "Next player: X".
 You can create your own methods and use it to display one square at a time.
     
-    - STEP 03
+# STEP 03
 
 Try to send numbers from 0 to 8, from "Board" to "Square" using a method. Display those values inside the squares.
 
 To send values from a component to another means sending arguments from a parent component to his child(dren). To use the argument(s) in the child: "props" is your friend.
     
-    - STEP 04
+# STEP 04
     
 Now we want to display an 'X' when we click on a square. To do this, think about onClick and useState or this.state.
 
@@ -94,7 +94,7 @@ States, are somethings that you are going to use all the time. It is going to be
 
 Create a state in "Board" and send it's value to "Square".
     
-    - STEP 05
+# STEP 05
     
 In Board, create a state which will contain an array. This array will represent all of our squares.
 
@@ -108,7 +108,7 @@ If "Square" is using states from itself, find a way to remove them so that the c
 
 Since the Square components no longer maintain state, the Square components receive values from the Board component and inform the Board component when they’re clicked. In React terms, the Square components are now controlled components. The Board has full control over them.
     
-    - STEP 06
+# STEP 06
    
 We're almost done ! Our Tic Tac Toe looks good but there's only one player...
 
@@ -118,7 +118,7 @@ Changes wil also be handled by handleClick function.
     
 Change the status displayed accordingly.
     
-    - STEP 07
+# STEP 07
     
 One more thing remaining, decides when a game is finished and who the winner is.
    
